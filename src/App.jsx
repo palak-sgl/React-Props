@@ -51,8 +51,13 @@ function App() {
             placeholder={"Enter email"}
             onChange={handleOnChange}
           />
-          <button onClick={emailValidation}>Submit</button>
-          <p>{message}</p>
+          <p className="text-xs text-red-600">{message}</p>
+          <button
+            onClick={passwordValidation}
+            className="mt-2 border border-blue-600 px-2 py-1 rounded-md"
+          >
+            Check
+          </button>
         </div>
 
         <div>
@@ -67,8 +72,13 @@ function App() {
             placeholder={"Enter password"}
             onChange={pwOnChange}
           />
-          <button onClick={passwordValidation}>Submit</button>
-          <p>{passwordMessage}</p>
+          <p className="text-xs text-red-600">{passwordMessage}</p>
+          <button
+            onClick={passwordValidation}
+            className="mt-2 border border-blue-600 px-2 py-1 rounded-md"
+          >
+            Check
+          </button>
         </div>
 
         <div>
