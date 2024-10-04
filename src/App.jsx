@@ -53,7 +53,7 @@ function App() {
           />
           <p className="text-xs text-red-600">{message}</p>
           <button
-            onClick={passwordValidation}
+            onClick={emailValidation}
             className="mt-2 border border-blue-600 px-2 py-1 rounded-md"
           >
             Check
